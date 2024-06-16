@@ -1,8 +1,11 @@
+/**
+ * 분산 시스템간 트랜잭션 일관성 보장 방법: 사가 패턴
+ */
 public class CampaignPublishingSaga {
   private final ICampaignRepository repository;
   private final List<IDomainEvent> events;
 
-  public CampaignPublishingSaga(ICampaignRepository repository, List<IDomainEvent> events) {
+  public CampaignPublishingSaga(ICampaignRepository repository, Liㄱst<IDomainEvent> events) {
     this.repository = repository;
     this.events = events;
   }
